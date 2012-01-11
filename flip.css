@@ -1,0 +1,62 @@
+input{ width:3em; margin-right:3px;}
+span{ display:inline-block;width:35px;}
+
+div#myCanvas{
+    position:relative;
+    top:50px;
+    left: 50px;
+    outline: 2px solid black;
+    background: #DDDDDD;
+    z-index:0;
+}
+
+div.circle{
+    position:absolute;
+    background:white;
+    border: 2px solid black;
+    width: 20px;
+    height:20px;
+    border-radius:12px;
+    text-align:center;
+    font-size:10pt;
+}
+
+div.line{
+    position:absolute;
+    border: 1px solid black;
+    width:0px;
+}
+
+div.circle.follower{
+
+    color:black;
+    z-index:2;
+    opacity:0.4;
+    z-index:-1;
+}
+
+.restrain{
+    color:white;
+    background:blue !important;
+    opacity:0.2;
+}
+
+#page{
+    background:#FFAAAA;
+    opacity: 0.8;
+    overflow-y:hidden;
+ 
+
+}
+
+#mask{
+    overflow:hidden;
+    background:transparent;
+    opacity:0.3;
+
+}
+
+img{
+    display:inline-block;
+    float:left;
+}
